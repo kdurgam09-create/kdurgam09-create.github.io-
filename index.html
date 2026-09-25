@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,6 @@
 <title>Durgam Kiran Kumar | Portfolio</title>
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 *{
     margin:0;
@@ -21,28 +16,22 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#fff;
     color:#111;
     line-height:1.6;
 }
 
-
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
     position:sticky;
     top:0;
     z-index:1000;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px 8%;
-
     background:#fff;
     border-bottom:1px solid #eee;
 }
@@ -63,7 +52,6 @@ nav a{
     color:#111;
     font-size:16px;
     font-weight:500;
-
     transition:0.3s;
 }
 
@@ -71,18 +59,13 @@ nav a:hover{
     color:#777;
 }
 
-
-/* =========================
-   HERO / PROFILE
-========================= */
+/* HERO */
 
 .hero{
     min-height:90vh;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     padding:60px 8%;
     gap:50px;
 }
@@ -91,7 +74,7 @@ nav a:hover{
     flex:1;
 }
 
-.hero-text .hello{
+.hello{
     font-size:20px;
     margin-bottom:10px;
     color:#666;
@@ -103,8 +86,7 @@ nav a:hover{
     margin-bottom:20px;
 }
 
-
-/* NAME ANIMATION */
+/* PROFILE NAME ANIMATION */
 
 .profile-name{
     display:block;
@@ -115,35 +97,74 @@ nav a:hover{
 
 .profile-name span{
     display:inline-block;
-
     opacity:0;
     transform:translateY(35px);
-
     animation:nameLetter 0.55s ease forwards;
 }
 
+.profile-name span:nth-child(1){
+    animation-delay:.05s;
+}
 
-/* Letter delays */
+.profile-name span:nth-child(2){
+    animation-delay:.10s;
+}
 
-.profile-name span:nth-child(1){animation-delay:.05s}
-.profile-name span:nth-child(2){animation-delay:.10s}
-.profile-name span:nth-child(3){animation-delay:.15s}
-.profile-name span:nth-child(4){animation-delay:.20s}
-.profile-name span:nth-child(5){animation-delay:.25s}
-.profile-name span:nth-child(6){animation-delay:.30s}
+.profile-name span:nth-child(3){
+    animation-delay:.15s;
+}
 
-.profile-name span:nth-child(7){animation-delay:.40s}
-.profile-name span:nth-child(8){animation-delay:.45s}
-.profile-name span:nth-child(9){animation-delay:.50s}
-.profile-name span:nth-child(10){animation-delay:.55s}
-.profile-name span:nth-child(11){animation-delay:.60s}
+.profile-name span:nth-child(4){
+    animation-delay:.20s;
+}
 
-.profile-name span:nth-child(12){animation-delay:.70s}
-.profile-name span:nth-child(13){animation-delay:.75s}
-.profile-name span:nth-child(14){animation-delay:.80s}
-.profile-name span:nth-child(15){animation-delay:.85s}
-.profile-name span:nth-child(16){animation-delay:.90s}
+.profile-name span:nth-child(5){
+    animation-delay:.25s;
+}
 
+.profile-name span:nth-child(6){
+    animation-delay:.30s;
+}
+
+.profile-name span:nth-child(7){
+    animation-delay:.40s;
+}
+
+.profile-name span:nth-child(8){
+    animation-delay:.45s;
+}
+
+.profile-name span:nth-child(9){
+    animation-delay:.50s;
+}
+
+.profile-name span:nth-child(10){
+    animation-delay:.55s;
+}
+
+.profile-name span:nth-child(11){
+    animation-delay:.60s;
+}
+
+.profile-name span:nth-child(12){
+    animation-delay:.70s;
+}
+
+.profile-name span:nth-child(13){
+    animation-delay:.75s;
+}
+
+.profile-name span:nth-child(14){
+    animation-delay:.80s;
+}
+
+.profile-name span:nth-child(15){
+    animation-delay:.85s;
+}
+
+.profile-name span:nth-child(16){
+    animation-delay:.90s;
+}
 
 @keyframes nameLetter{
 
@@ -159,6 +180,7 @@ nav a:hover{
 
 }
 
+/* HERO TEXT */
 
 .hero-text p{
     max-width:600px;
@@ -167,10 +189,7 @@ nav a:hover{
     margin-bottom:30px;
 }
 
-
-/* =========================
-   BUTTONS
-========================= */
+/* BUTTONS */
 
 .buttons{
     display:flex;
@@ -179,15 +198,10 @@ nav a:hover{
 
 .btn{
     display:inline-block;
-
     padding:13px 25px;
-
     text-decoration:none;
-
     border:1px solid #111;
-
     color:#111;
-
     transition:0.3s;
 }
 
@@ -196,14 +210,10 @@ nav a:hover{
     color:#fff;
 }
 
-
-/* =========================
-   PROFILE IMAGE
-========================= */
+/* PROFILE IMAGE */
 
 .hero-image{
     flex:1;
-
     display:flex;
     justify-content:center;
 }
@@ -211,16 +221,11 @@ nav a:hover{
 .hero-image img{
     width:330px;
     height:330px;
-
     object-fit:cover;
-
     border-radius:50%;
-
     border:5px solid #111;
-
     animation:profileImage 1.2s ease;
 }
-
 
 @keyframes profileImage{
 
@@ -236,10 +241,7 @@ nav a:hover{
 
 }
 
-
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 section{
     padding:90px 8%;
@@ -251,33 +253,22 @@ section{
     margin-bottom:50px;
 }
 
-
-/* =========================
-   SCROLL ANIMATION
-========================= */
+/* SCROLL ANIMATION */
 
 .animate{
-
     opacity:0;
-
     transform:translateY(60px);
-
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
 }
 
 .animate.show{
-
     opacity:1;
-
     transform:translateY(0);
 }
 
-
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 #about{
     background:#f7f7f7;
@@ -286,9 +277,7 @@ section{
 .about{
     max-width:900px;
     margin:auto;
-
     text-align:center;
-
     font-size:17px;
     color:#555;
 }
@@ -297,40 +286,25 @@ section{
     margin-bottom:20px;
 }
 
-
-/* =========================
-   SKILLS
-========================= */
+/* SKILLS */
 
 .skills-container{
-
     display:grid;
-
-    grid-template-columns:
-    repeat(4,1fr);
-
+    grid-template-columns:repeat(4,1fr);
     gap:25px;
 }
 
 .card{
-
     padding:30px;
-
     text-align:center;
-
     border:1px solid #ddd;
-
     background:#fff;
-
     transition:0.3s;
 }
 
 .card:hover{
-
     transform:translateY(-8px);
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.08);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card h3{
@@ -341,38 +315,24 @@ section{
     color:#666;
 }
 
-
-/* =========================
-   PROJECTS
-========================= */
+/* PROJECTS */
 
 .projects-container{
-
     display:grid;
-
-    grid-template-columns:
-    repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
     gap:25px;
 }
 
 .project-card{
-
     padding:35px;
-
     border:1px solid #ddd;
-
     background:#fff;
-
     transition:0.3s;
 }
 
 .project-card:hover{
-
     transform:translateY(-8px);
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.08);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .project-card h3{
@@ -383,27 +343,18 @@ section{
     color:#666;
 }
 
-
-/* =========================
-   EDUCATION
-========================= */
+/* EDUCATION */
 
 #education{
     background:#f7f7f7;
 }
 
 .education-box{
-
     max-width:800px;
-
     margin:auto;
-
     padding:35px;
-
     text-align:center;
-
     background:#fff;
-
     border:1px solid #ddd;
 }
 
@@ -415,21 +366,13 @@ section{
     color:#666;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact-box{
-
     max-width:700px;
-
     margin:auto;
-
     text-align:center;
-
     padding:40px;
-
     border:1px solid #ddd;
 }
 
@@ -444,17 +387,11 @@ section{
 }
 
 .contact-btn{
-
     display:inline-block;
-
     margin-top:20px;
-
     padding:13px 28px;
-
     background:#111;
-
     color:#fff !important;
-
     transition:0.3s;
 }
 
@@ -462,28 +399,17 @@ section{
     background:#444;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-
     padding:25px;
-
     text-align:center;
-
     background:#111;
-
     color:#fff;
-
     font-size:14px;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
+/* TABLET / MOBILE */
 
 @media(max-width:800px){
 
@@ -503,80 +429,57 @@ footer{
         font-size:13px;
     }
 
-
     .hero{
-
         flex-direction:column-reverse;
-
         text-align:center;
-
         padding:60px 5%;
-
     }
-
 
     .hero-text{
         width:100%;
     }
 
-
     .hero-text h1{
         font-size:38px;
     }
-
 
     .profile-name{
         font-size:38px;
     }
 
-
     .hero-text p{
         font-size:15px;
     }
 
-
     .buttons{
-
         justify-content:center;
-
         flex-wrap:wrap;
     }
 
-
     .hero-image img{
-
         width:250px;
         height:250px;
-
     }
-
 
     section{
         padding:70px 5%;
     }
 
-
     .title{
         font-size:30px;
     }
 
-
     .skills-container{
-
-        grid-template-columns:
-        repeat(2,1fr);
-
+        grid-template-columns:repeat(2,1fr);
     }
 
-
     .projects-container{
-
         grid-template-columns:1fr;
-
     }
 
 }
 
+/* SMALL MOBILE */
 
 @media(max-width:500px){
 
@@ -600,38 +503,24 @@ footer{
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
-    <div class="logo">
-        KIRAN.
-    </div>
+    <div class="logo">KIRAN.</div>
 
     <nav>
-
         <a href="#about">About</a>
-
         <a href="#skills">Skills</a>
-
         <a href="#projects">Projects</a>
-
         <a href="#education">Education</a>
-
         <a href="#contact">Hire Me</a>
-
     </nav>
 
 </header>
 
 
-
-<!-- =========================
-     PROFILE / HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -641,6 +530,7 @@ footer{
             Hello, I'm
         </div>
 
+        <!-- NAME -->
 
         <h1 class="profile-name">
 
@@ -650,14 +540,12 @@ footer{
             <span>g</span>
             <span>a</span>
             <span>m</span>
-
-            <span>&nbsp;K</span>
+            <span>K</span>
             <span>i</span>
             <span>r</span>
             <span>a</span>
             <span>n</span>
-
-            <span>&nbsp;K</span>
+            <span>K</span>
             <span>u</span>
             <span>m</span>
             <span>a</span>
@@ -667,11 +555,9 @@ footer{
 
 
         <p>
-
-            B.Tech Computer Science Engineering student
-            and aspiring software developer passionate
-            about programming, web development and technology.
-
+            B.Tech Computer Science Engineering student and aspiring
+            software developer passionate about programming,
+            web development and technology.
         </p>
 
 
@@ -702,10 +588,7 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -713,34 +596,22 @@ footer{
         About Me
     </h2>
 
-
     <div class="about animate">
 
         <p>
-
-            I am <b>Durgam Kiran Kumar</b>,
-            a B.Tech Computer Science Engineering student
-            at Krishna Chaitanya Institute of Technology
-            and Sciences.
-
+            I am <b>Durgam Kiran Kumar</b>, a B.Tech Computer Science
+            Engineering student at Krishna Chaitanya Institute of
+            Technology and Sciences.
         </p>
 
-
         <p>
-
-            I enjoy learning programming, developing
-            websites and exploring new technologies.
-            I am continuously improving my programming
-            and problem-solving skills.
-
+            I enjoy learning programming, developing websites and
+            exploring new technologies. I am continuously improving
+            my programming and problem-solving skills.
         </p>
 
-
         <p>
-
-            📍 <b>Location:</b>
-            Andhra Pradesh, India
-
+            📍 <b>Location:</b> Andhra Pradesh, India
         </p>
 
     </div>
@@ -748,17 +619,13 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     SKILLS
-========================= -->
+<!-- SKILLS -->
 
 <section id="skills">
 
     <h2 class="title">
         Skills
     </h2>
-
 
     <div class="skills-container">
 
@@ -810,17 +677,13 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     PROJECTS
-========================= -->
+<!-- PROJECTS -->
 
 <section id="projects">
 
     <h2 class="title">
         Projects
     </h2>
-
 
     <div class="projects-container">
 
@@ -832,10 +695,8 @@ footer{
             </h3>
 
             <p>
-
-                A responsive personal portfolio website
-                created using HTML, CSS and JavaScript.
-
+                A responsive personal portfolio website created
+                using HTML, CSS and JavaScript.
             </p>
 
         </div>
@@ -848,10 +709,8 @@ footer{
             </h3>
 
             <p>
-
-                More software and web development
-                projects will be added here.
-
+                More software and web development projects
+                will be added here.
             </p>
 
         </div>
@@ -862,10 +721,7 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     EDUCATION
-========================= -->
+<!-- EDUCATION -->
 
 <section id="education">
 
@@ -881,12 +737,11 @@ footer{
         </h3>
 
         <p>
-            Krishna Chaitanya Institute of Technology
-            and Sciences
+            Krishna Chaitanya Institute of Technology and Sciences
         </p>
 
         <p>
-            Academic Year: 2023 - 2027
+            Academic Year: 2022 - 2026
         </p>
 
     </div>
@@ -894,10 +749,7 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -936,30 +788,18 @@ footer{
 </section>
 
 
-
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
-    © 2026 Durgam Kiran Kumar.
-    All Rights Reserved.
+    © 2026 Durgam Kiran Kumar. All Rights Reserved.
 
 </footer>
 
 
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+<!-- SCROLL ANIMATION SCRIPT -->
 
 <script>
-
-
-/* =========================
-   SCROLL ANIMATION
-========================= */
 
 const animatedElements =
 document.querySelectorAll(
@@ -979,6 +819,7 @@ new IntersectionObserver(
                 entry.target.classList.add("show");
 
             }
+
             else{
 
                 entry.target.classList.remove("show");
@@ -1004,10 +845,8 @@ animatedElements.forEach((element) => {
 
 });
 
-
 </script>
 
 
 </body>
-
 </html>
